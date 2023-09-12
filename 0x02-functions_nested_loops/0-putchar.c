@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <main.h>
 
 /**
  * main - Program entry point
  *
- * Return - 0(Success), 1(Error).
+ * Return: 0(Success), 1(Error).
  */
 
 int main(void)
