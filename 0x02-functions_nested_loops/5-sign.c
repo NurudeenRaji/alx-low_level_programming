@@ -10,19 +10,15 @@
 
 int print_sign(int n)
 {
+	char a, b, c;
+
+	a = '+';
+	b = '0';
+	c = '-1';
 	if (n > 0)
-	{
-		putchar('+');
-		return (+1);
-	}
+		return (a,1);
 	else if (n == 0)
-	{
-		putchar('0');
-		return (0);
-	}
+		return (b, 0);
 	else
-	{
-		putchar('-');
-		return (-1);
-	}
+		return (c, -1);
 }
