@@ -16,9 +16,12 @@ int print_sign(int n)
 	b = '0';
 	c = '-1';
 	if (n > 0)
-		return (a,1);
+		return (a);
+		return (1);
 	else if (n == 0)
-		return (b, 0);
+		return (b)
+		return (0);
 	else
-		return (c, -1);
+		return (c);
+		return (-1);
 }
