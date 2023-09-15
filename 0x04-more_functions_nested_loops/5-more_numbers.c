@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * more_numbers(void) - prints 10 times the number.
+ * more_numbers - prints 10 times the number.
  */
 
 void more_numbers(void)
