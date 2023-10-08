@@ -5,9 +5,10 @@
 /**
  * malloc_checked - allocate with malloc and exit  with 98.
  * @b: size of the memory
+ * Return: pointer to the memory allocated
  */
 
-void  *malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	int *mem;
 
@@ -18,7 +19,6 @@ void  *malloc_checked(unsigned int b)
 	}
 	else
 	{
-		printf("Too large memory\n");
-		exit (98);
+		exit(98);
 	}
 }
