@@ -17,9 +17,5 @@ void print_name(char *name, void (*f)(char *))
 		return;
 	}
 
-	mem = malloc(sizeof(name));
-	if (mem == NULL)
-		return;
-
 	f(name);
 }
