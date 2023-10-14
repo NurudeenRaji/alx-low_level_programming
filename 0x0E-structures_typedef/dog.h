@@ -25,12 +25,7 @@ void print_dog(struct dog *d);
  * @owner: the dog's owner.
  */
 
-typedef struct dog_s
-{
-	char *name;
-	float age;
-	char *owner;
-}dog_t;
+typedef struct dog dog_t;
 
 dog_t *new_dog(char *name, float age, char *owner);
 
