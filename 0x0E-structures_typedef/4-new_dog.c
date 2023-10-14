@@ -26,6 +26,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	for (i = 0; name[i] != '\0'; i++)
 		mem->name[i] = name[i];
+	mem->name[i] = '\0';
 
 	len2 = 0;
 	while (owner[len2] != '\0')
@@ -35,6 +36,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	for (i = 0; owner[i] != '\0'; i++)
 		mem->owner[i] = owner[i];
+	mem->owner[i]  = '\0';
 
 	mem->age = age;
 
