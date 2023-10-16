@@ -40,9 +40,10 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s%s", separator, str);
 				break;
+			default:
+				separator = ", ";
+				i++;
 		}
-		separator = ", ";
-		i++;
 	}
 	printf("\n");
 	va_end(ag);
