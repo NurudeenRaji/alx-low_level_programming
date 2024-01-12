@@ -2,7 +2,7 @@
 
 /**
  * hash_table_create - Create a hash table.
- * size: the size of the hash table.
+ * @size: the size of the hash table.
  * Return: the table address
  */
 
@@ -16,13 +16,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	table->size = size;
-	table->array = calloc(table->size, sizeof(hash_node_t*));
+	table->array = calloc(table->size, sizeof(hash_node_t *));
+	if (table->array == NULL)
+		return (NULL);
 
 	for (i = 0; i < table->size; i++)
 		table->array[i] = NULL;
-
-	/*free(table->array);
-	free(table);*/
 
 	return (table);
 }
