@@ -50,9 +50,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	return (1);
 }
 
+/**
+ * create_node - creates a node with key value.
+ * @key: the key to use in insertion.
+ * @value: the value at the key.
+ * Return: the node.
+ */
+
 hash_node_t *create_node(const char *key, const char *value)
 {
 	hash_node_t *node = malloc(sizeof(hash_node_t));
+
 	node->key = malloc(strlen(key) + 1);
 	node->value = malloc(strlen(value) + 1);
 	strcpy(node->key, key);
