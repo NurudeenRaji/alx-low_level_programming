@@ -9,7 +9,9 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i, size;
 	hash_node_t *node;
+	int comma;
 
+	comma = 0;
 	printf("{");
 	if (ht == NULL)
 		return;
@@ -22,9 +24,14 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			printf("'%s': '%s'", node->key, node->value);
 			if (node->next != NULL || i < size - 1)
+			{
 				printf(", ");
+				comma = 1;
+			}
 			node = node->next;
 		}
 	}
+	if (comma)
+		printf("\b\b");
 	printf("}\n");
 }
